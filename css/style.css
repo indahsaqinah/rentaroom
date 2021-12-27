@@ -1,0 +1,46 @@
+.body {
+    max-width: 60%;
+    margin: auto;
+    min-height: 100vh;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.w3-grid-template {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 601px) {
+
+.body {
+    max-width: 100%
+}
+
+.w3-grid-template {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .w3-grid-template {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        max-width: 70%;
+        margin: auto;
+    }
+
+    .w3-grid-template {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
